@@ -19,9 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <div className="absolute top-0 z-[-2] h-screen w-screen [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#704abb_100%)]">
+          {children}
+        </div>
+
         <Analytics />
       </body>
     </html>
   );
 }
+
