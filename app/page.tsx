@@ -1,7 +1,12 @@
+"use client"
 
-export default function Home() {
-  return (
-    <div className="w-full h-screen"></div>
-  );
+import Home from "./home";
+import About from "./about";
+
+export default function Page() {
+  return (<>
+    <Home />
+    <About/>
+  </>)
 }
 
