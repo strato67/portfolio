@@ -1,5 +1,5 @@
 export default function About(){
     return(<>
-    <div className="h-screen">d</div>
+    <div className="h-screen" id="about">d</div>
     </>)
 }
