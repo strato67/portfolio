@@ -32,7 +32,7 @@ export default function About() {
                     </div>
                     <article className="w-96 flex flex-col gap-4 text-lg font-normal">
                         <p>
-                            <span className="font-semibold text-xl">Hi! I&#39;m Saaransh Sharma&apos;</span> a software developer and recent
+                            <span className="font-semibold text-xl">Hi! I&#39;m Saaransh Sharma&#44;</span> a software developer and recent
                             graduate in software engineering from Ontario Tech University.{" "}
                         </p>
 
