@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <div
-        className="min-h-screen w-full flex flex-col items-center justify-center gap-16 bg-neutral-900 "
+        className="min-h-screen w-full flex flex-col items-center justify-center gap-16 bg-neutral-900 border-transparent"
         id="about"
       >
         <motion.div
@@ -39,7 +39,7 @@ export default function About() {
             </span>
           </div>
           <motion.div
-            className="w-96 flex flex-col gap-4 text-lg font-normal backdrop-blur-lg d p-2 rounded-3xl"
+            className="w-96 flex flex-col gap-4 text-lg font-normal "
             initial={{ opacity: 0.0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
