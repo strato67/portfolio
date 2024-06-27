@@ -32,17 +32,17 @@ export default function About() {
                     </div>
                     <article className="w-96 flex flex-col gap-4 text-lg font-normal">
                         <p>
-                            <span className="font-semibold text-xl">Hi! I'm Saaransh Sharma,</span> a software developer and recent
+                            <span className="font-semibold text-xl">Hi! I&#39;m Saaransh Sharma&apos;</span> a software developer and recent
                             graduate in software engineering from Ontario Tech University.{" "}
                         </p>
 
                         <p>
                             My interests span across web development, mobile development, cloud computing, cybersecurity and information technology.
-                            I'm always eager to learn new things and expand my skill set.
+                            I&#39;m always eager to learn new things and expand my skill set.
                         </p>
                         <p>
                             When
-                            I'm not developing, I enjoy working out, gaming, going for drives, and exploring new places.
+                            I&#39;m not developing, I enjoy working out, gaming, going for drives, and exploring new places.
                         </p>
                     </article>
 
