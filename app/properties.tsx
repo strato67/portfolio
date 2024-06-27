@@ -7,6 +7,11 @@ type SocialMedia = {
 
 }
 
+type Skill = {
+  description: string,
+  imagePath: string
+}
+
 export const socials: Record<string, SocialMedia> = {
   linkedin: {
     url: "https://www.linkedin.com/in/saaransh-sharma/",
@@ -21,3 +26,86 @@ export const socials: Record<string, SocialMedia> = {
     icon: GitHubLogoIcon,
   },
 };
+
+export const skills:Record<string, Skill[]> = {
+  Languages:[
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+  ],
+  Frameworks:[
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+  ],
+
+  Tools: [
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+    {
+      description: "",
+      imagePath: ""
+    },
+  ]
+
+}
