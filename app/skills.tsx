@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { skills } from "./properties";
+import React from "react";
 
 export default function Skills() {
   return (
@@ -48,47 +50,32 @@ export default function Skills() {
                 ease: "easeInOut",
               }}
             >
-              <div>
-                <h3 className="text-xl my-4">Languages</h3>
-                <div className="grid grid-flow-row place-items-center grid-cols-3 gap-4">
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
+              {Object.keys(skills).map((skill, index) => {
+                const skillList = skills[skill];
+                return (
+                  <div key={`skill-${index}`}>
+                    <h3 className="text-xl my-4">{skill}</h3>
+                    <div className="grid grid-flow-row place-items-center grid-cols-3 gap-4">
+                      {skillList.map((item, itemIndex) => (
+                        <React.Fragment key={`item-${itemIndex}`}>
 
+                          <div className="flex flex-col gap-2 items-center hover:scale-105">
+                            <div
 
-                  
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl my-4">Frameworks</h3>
-                <div className="grid grid-flow-row place-items-center grid-cols-3 gap-4">
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
+                              className="h-24 w-24 bg-black rounded-2xl text-center"
+                            >
 
-                  
+                            </div>
+                            <p className="text-sm font-sans">{item.description}</p>
+                          </div>
 
-                  
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl my-4">Tools</h3>
-                <div className="grid grid-flow-row place-items-center grid-cols-3 gap-4">
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
-                  <div className="h-24 w-24 bg-black rounded-2xl"></div>
+                        </React.Fragment>
 
-
-                  
-                </div>
-              </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
             </motion.div>
           </div>
         </div>

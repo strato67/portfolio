@@ -30,82 +30,95 @@ export const socials: Record<string, SocialMedia> = {
 export const skills:Record<string, Skill[]> = {
   Languages:[
     {
-      description: "",
+      description: "JavaScript",
       imagePath: ""
     },
     {
-      description: "",
+      description: "Python",
       imagePath: ""
     },
     {
-      description: "",
+      description: "TypeScript",
       imagePath: ""
     },
     {
-      description: "",
+      description: "Java",
       imagePath: ""
     },
     {
-      description: "",
+      description: "HTML",
       imagePath: ""
     },
     {
-      description: "",
+      description: "CSS",
       imagePath: ""
     },
   ],
   Frameworks:[
     {
-      description: "",
+      description: "React",
       imagePath: ""
     },
     {
-      description: "",
+      description: "Express.js",
       imagePath: ""
     },
     {
-      description: "",
+      description: "Flask",
       imagePath: ""
     },
     {
-      description: "",
+      description: "Next.js",
       imagePath: ""
     },
     {
-      description: "",
+      description: "Jest",
       imagePath: ""
     },
     {
-      description: "",
+      description: "TailwindCSS",
       imagePath: ""
     },
   ],
 
   Tools: [
     {
-      description: "",
+      description: "Git",
       imagePath: ""
     },
     {
-      description: "",
+      description: "Docker",
       imagePath: ""
     },
     {
-      description: "",
+      description: "MySQL",
       imagePath: ""
     },
     {
-      description: "",
+      description: "SQLite",
       imagePath: ""
     },
     {
-      description: "",
+      description: "MongoDB",
       imagePath: ""
     },
     {
-      description: "",
+      description: "Firebase",
       imagePath: ""
     },
+    {
+      description: "Redis",
+      imagePath: ""
+    },
+    {
+      description: "AWS",
+      imagePath: ""
+    },
+    {
+      description: "GCP",
+      imagePath: ""
+    },
+
   ]
 
 }
