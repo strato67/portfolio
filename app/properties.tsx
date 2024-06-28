@@ -31,27 +31,27 @@ export const skills:Record<string, Skill[]> = {
   Languages:[
     {
       description: "JavaScript",
-      imagePath: ""
+      imagePath: "/skills-assets/js.png"
     },
     {
       description: "Python",
-      imagePath: ""
+      imagePath: "/skills-assets/python.jpg"
     },
     {
       description: "TypeScript",
-      imagePath: ""
+      imagePath: "/skills-assets/ts.png"
     },
     {
       description: "Java",
-      imagePath: ""
+      imagePath: "/skills-assets/java.png"
     },
     {
       description: "HTML",
-      imagePath: ""
+      imagePath: "/skills-assets/html.png"
     },
     {
       description: "CSS",
-      imagePath: ""
+      imagePath: "/skills-assets/css.jpg"
     },
   ],
   Frameworks:[
