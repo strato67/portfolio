@@ -41,7 +41,8 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           "absolute inset-0 rounded-3xl z-[1] opacity-60 group-hover:opacity-100 blur-xl  transition duration-500 will-change-transform",
-          "bg-[radial-gradient(circle_farthest-side_at_0_100%,#4A1D96,transparent),radial-gradient(circle_farthest-side_at_100%_0,#6C2BD9,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#9061F9,transparent),radial-gradient(circle_farthest-side_at_0_0,#CABFFD,#EDEBFE)]"        )}
+          "bg-[radial-gradient(circle_farthest-side_at_0_100%,#4A1D96,transparent),radial-gradient(circle_farthest-side_at_100%_0,#6C2BD9,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#9061F9,transparent),radial-gradient(circle_farthest-side_at_0_0,#CABFFD,#EDEBFE)]"
+        )}
       />
       <motion.div
         variants={animate ? variants : undefined}

@@ -64,8 +64,13 @@ export default function Skills() {
                         <React.Fragment key={`item-${itemIndex}`}>
                           <div className="flex flex-col gap-2 items-center hover:scale-105">
                             <BackgroundGradient animate={true} className="">
-                  
-                              <Image className="h-24 w-24 bg-black rounded-2xl text-center" src={"/skills-assets/css.jpg"} width={256} height={256} alt={item.description}/>
+                              <Image
+                                className="h-24 w-24 bg-black rounded-2xl text-center"
+                                src={item.imagePath}
+                                width={256}
+                                height={256}
+                                alt={item.description}
+                              />
                             </BackgroundGradient>
                             <p className="text-xs font-bold">
                               {item.description}

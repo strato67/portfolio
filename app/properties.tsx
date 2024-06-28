@@ -1,16 +1,21 @@
-import { EnvelopeClosedIcon, LinkedInLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import {
+  EnvelopeClosedIcon,
+  LinkedInLogoIcon,
+  GitHubLogoIcon,
+} from "@radix-ui/react-icons";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 
 type SocialMedia = {
-    url: string,
-    icon: React.ForwardRefExoticComponent<IconProps & React.RefAttributes<SVGSVGElement>>
-
-}
+  url: string;
+  icon: React.ForwardRefExoticComponent<
+    IconProps & React.RefAttributes<SVGSVGElement>
+  >;
+};
 
 type Skill = {
-  description: string,
-  imagePath: string
-}
+  description: string;
+  imagePath: string;
+};
 
 export const socials: Record<string, SocialMedia> = {
   linkedin: {
@@ -27,98 +32,96 @@ export const socials: Record<string, SocialMedia> = {
   },
 };
 
-export const skills:Record<string, Skill[]> = {
-  Languages:[
+export const skills: Record<string, Skill[]> = {
+  Languages: [
     {
       description: "JavaScript",
-      imagePath: "/skills-assets/js.png"
+      imagePath: "/skills-assets/js.png",
     },
     {
       description: "Python",
-      imagePath: "/skills-assets/python.jpg"
+      imagePath: "/skills-assets/python.jpg",
     },
     {
       description: "TypeScript",
-      imagePath: "/skills-assets/ts.png"
+      imagePath: "/skills-assets/ts.png",
     },
     {
       description: "Java",
-      imagePath: "/skills-assets/java.png"
+      imagePath: "/skills-assets/java.png",
     },
     {
       description: "HTML",
-      imagePath: "/skills-assets/html.png"
+      imagePath: "/skills-assets/html.png",
     },
     {
       description: "CSS",
-      imagePath: "/skills-assets/css.jpg"
+      imagePath: "/skills-assets/css.jpg",
     },
   ],
-  Frameworks:[
+  Frameworks: [
     {
       description: "React",
-      imagePath: ""
+      imagePath: "/skills-assets/react.svg",
     },
     {
       description: "Express.js",
-      imagePath: ""
+      imagePath: "/skills-assets/express.png",
     },
     {
       description: "Flask",
-      imagePath: ""
+      imagePath: "/skills-assets/flask.png",
     },
     {
       description: "Next.js",
-      imagePath: ""
+      imagePath: "/skills-assets/nextjs.jpg",
     },
     {
       description: "Jest",
-      imagePath: ""
+      imagePath: "/skills-assets/jest.png",
     },
     {
       description: "TailwindCSS",
-      imagePath: ""
+      imagePath: "/skills-assets/tailwind.png",
     },
   ],
 
   Tools: [
     {
       description: "Git",
-      imagePath: ""
+      imagePath: "/skills-assets/git.png",
     },
     {
       description: "Docker",
-      imagePath: ""
+      imagePath: "/skills-assets/docker.png",
     },
     {
       description: "MySQL",
-      imagePath: ""
+      imagePath: "/skills-assets/mysql.svg",
     },
     {
       description: "SQLite",
-      imagePath: ""
+      imagePath: "/skills-assets/sqlite.jpg",
     },
     {
       description: "MongoDB",
-      imagePath: ""
+      imagePath: "/skills-assets/mongo.png",
     },
     {
       description: "Firebase",
-      imagePath: ""
+      imagePath: "/skills-assets/firebase.png",
     },
     {
       description: "Redis",
-      imagePath: ""
+      imagePath: "/skills-assets/redis.jpg",
     },
     {
       description: "AWS",
-      imagePath: ""
+      imagePath: "/skills-assets/aws.jpg",
     },
     {
       description: "GCP",
-      imagePath: ""
+      imagePath: "/skills-assets/gcp.png",
     },
-
-  ]
-
-}
+  ],
+};
