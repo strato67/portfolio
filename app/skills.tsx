@@ -101,11 +101,12 @@ export default function Skills() {
             </div>
 
             <motion.div
-              className="hidden w-96 lg:flex flex-col gap-4 text-lg font-normal lg:flex-row lg:w-full lg:gap-12 lg:border-4 lg:p-8 lg:rounded-2xl lg:border-neutral-700 lg:shadow-lg lg:shadow-black "
+              className="hidden bg-neutral-950 lg:flex text-lg font-normal flex-row w-full gap-12 border-4 p-8 rounded-2xl border-neutral-700 shadow-lg shadow-black "
               initial={{
                 opacity: 1,
-                transformOrigin: "bottom center",
-                rotateX: -90,
+                transformOrigin: "top center",
+                rotateX: -95,
+                backfaceVisibility: "hidden"
               }}
               whileInView={{ opacity: 1, rotateX: 0 }}
               viewport={{ once: true }}
@@ -114,6 +115,7 @@ export default function Skills() {
                 duration: 1.8,
                 ease: "easeInOut",
               }}
+              
             >
               {Object.keys(skills).map((skill, index) => {
                 const skillList = skills[skill];
