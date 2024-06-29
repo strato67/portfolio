@@ -40,7 +40,7 @@ export const skills: Record<string, Skill[]> = {
     },
     {
       description: "Python",
-      imagePath: "/skills-assets/python.jpg",
+      imagePath: "/skills-assets/python.png",
     },
     {
       description: "TypeScript",
