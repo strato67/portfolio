@@ -6,7 +6,6 @@ import React from "react";
 
 export default function Skills() {
   const keycaps = ["Ctrl", "⌘", "Alt"];
-  
 
   return (
     <>
@@ -45,8 +44,7 @@ export default function Skills() {
             </motion.div>
 
             <div className="lg:hidden w-96 flex flex-col gap-4 text-lg font-normal">
-
-            {Object.keys(skills).map((skill, index) => {
+              {Object.keys(skills).map((skill, index) => {
                 const skillList = skills[skill];
                 return (
                   <div key={`skill-${index}`}>
@@ -100,18 +98,21 @@ export default function Skills() {
                   </div>
                 );
               })}
-
             </div>
 
             <motion.div
               className="hidden w-96 lg:flex flex-col gap-4 text-lg font-normal lg:flex-row lg:w-full lg:gap-12 lg:border-4 lg:p-8 lg:rounded-2xl lg:border-neutral-700 lg:shadow-lg lg:shadow-black "
-              initial={{ opacity: 1,  transformOrigin: "bottom center", rotateX: -90}}
-              whileInView={{ opacity: 1,  rotateX: 0 }}
+              initial={{
+                opacity: 1,
+                transformOrigin: "bottom center",
+                rotateX: -90,
+              }}
+              whileInView={{ opacity: 1, rotateX: 0 }}
               viewport={{ once: true }}
               transition={{
                 delay: 0,
                 duration: 1.8,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
             >
               {Object.keys(skills).map((skill, index) => {
