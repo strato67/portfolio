@@ -8,9 +8,9 @@ import Projects from "./projects";
 export default function Page() {
   return (<>
     <Home />
-    <About/>
-    <Skills/>
-    <Projects/>
+    <About />
+    <Skills />
+    <Projects />
   </>)
 }
 

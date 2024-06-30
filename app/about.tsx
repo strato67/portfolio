@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <div
-        className="min-h-screen w-full flex flex-col items-center justify-center gap-16 bg-neutral-900 border-transparent"
+        className="min-h-screen w-full flex flex-col items-center justify-center gap-16 bg-neutral-900 border-transparent py-8 px-2"
         id="about"
       >
         <motion.div

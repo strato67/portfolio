@@ -10,7 +10,7 @@ export default function Skills() {
   return (
     <>
       <div
-        className="min-h-screen w-full flex flex-col items-center justify-center bg-neutral-900 border-transparent px-6"
+        className="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-neutral-900 via-violet-900  to-neutral-900 from-0% via-95% to-100% border-transparent py-8 px-2"
         id="skills"
       >
         <motion.div
@@ -43,7 +43,7 @@ export default function Skills() {
               My Skills
             </motion.div>
 
-            <div className="lg:hidden w-96 flex flex-col gap-4 text-lg font-normal">
+            <div className="lg:hidden w-96 flex flex-col gap-4 text-lg font-normal ">
               {Object.keys(skills).map((skill, index) => {
                 const skillList = skills[skill];
                 return (
@@ -53,7 +53,7 @@ export default function Skills() {
                       {skillList.map((item, itemIndex) => (
                         <React.Fragment key={`item-${itemIndex}`}>
                           <div className="flex flex-col gap-2 items-center hover:scale-105">
-                            <BackgroundGradient animate={true} className="">
+
                               <Image
                                 className="h-24 w-24 bg-black rounded-2xl text-center"
                                 src={item.imagePath}
@@ -61,7 +61,7 @@ export default function Skills() {
                                 height={256}
                                 alt={item.description}
                               />
-                            </BackgroundGradient>
+
                             <p className="text-xs font-bold">
                               {item.description}
                             </p>
@@ -69,31 +69,6 @@ export default function Skills() {
                         </React.Fragment>
                       ))}
 
-                      {skill === "Frameworks" && (
-                        <div className="w-full col-span-3 hidden lg:block">
-                          <BackgroundGradient animate={true}>
-                            <div className="h-24  bg-black rounded-2xl text-center "></div>
-                          </BackgroundGradient>
-                        </div>
-                      )}
-
-                      {skill === "Languages" && (
-                        <>
-                          <div className="w-full col-span-3 hidden lg:grid grid-cols-3 place-items-center gap-6 select-none">
-                            {keycaps.map((keyCap, keyIndex) => (
-                              <BackgroundGradient
-                                animate={true}
-                                className="hidden lg:block"
-                                key={`keyCap-${keyIndex}`}
-                              >
-                                <div className="h-24 w-24  bg-black rounded-2xl text-center flex items-center justify-center text-neutral-500">
-                                  {keyCap}
-                                </div>
-                              </BackgroundGradient>
-                            ))}
-                          </div>
-                        </>
-                      )}
                     </div>
                   </div>
                 );

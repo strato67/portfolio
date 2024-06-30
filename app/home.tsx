@@ -7,7 +7,7 @@ import { ArrowDownIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
   return (
-    <AuroraBackground className="bg-gradient-to-t from-neutral-900 via-violet-700 to-neutral-900 flex justify-center items-center z-10">
+    <AuroraBackground className="bg-gradient-to-t from-neutral-900 via-violet-950 to-neutral-900 flex justify-center items-center z-10">
       <SparklesCore
         background="transparent"
         minSize={0.4}
