@@ -10,7 +10,7 @@ export default function Skills() {
   return (
     <>
       <div
-        className="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-neutral-900 via-violet-900  to-neutral-900 from-0% via-95% to-100% border-transparent py-8 px-2"
+        className="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-neutral-900  to-violet-900 from-0% via-80% to-95% border-transparent py-8 px-2"
         id="skills"
       >
         <motion.div
@@ -24,7 +24,7 @@ export default function Skills() {
             ease: "easeInOut",
           }}
         >
-          My Skills
+          Skills
         </motion.div>
 
         <div className="flex flex-col lg:flex-row-reverse gap-16 items-center z-10">
@@ -40,7 +40,7 @@ export default function Skills() {
                 ease: "easeInOut",
               }}
             >
-              My Skills
+              Skills
             </motion.div>
 
             <div className="lg:hidden w-96 flex flex-col gap-4 text-lg font-normal ">
@@ -52,10 +52,10 @@ export default function Skills() {
                     <div className="grid grid-flow-row place-items-center grid-cols-3 gap-6">
                       {skillList.map((item, itemIndex) => (
                         <React.Fragment key={`item-${itemIndex}`}>
-                          <div className="flex flex-col gap-2 items-center hover:scale-105">
+                          <div className="flex flex-col gap-2 items-center hover:scale-105 ">
 
                               <Image
-                                className="h-24 w-24 bg-black rounded-2xl text-center"
+                                className="h-24 w-24 bg-black rounded-2xl text-center shadow-md  shadow-black"
                                 src={item.imagePath}
                                 width={256}
                                 height={256}

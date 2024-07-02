@@ -67,7 +67,7 @@ export default function About() {
               }}
             >
               <p>
-                <span className="font-semibold text-xl">
+                <span className="font-semibold text-xl text-violet-300">
                   Hi! I&#39;m Saaransh Sharma&#44;
                 </span>{" "}
                 a software developer and recent graduate in software engineering
