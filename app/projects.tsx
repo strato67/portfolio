@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <>
       <div
-        className="min-h-screen w-full flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-violet-900 to-neutral-900 from-0% via-0% to-5% lg:to-10% border-transparent py-16"
+        className="min-h-screen w-full flex flex-col items-center justify-center gap-4 "
         id="projects"
       >
         <motion.div
@@ -21,12 +21,10 @@ export default function Projects() {
           }}
         >
           Projects
-
           <div className="font-normal text-base  text-violet-300 mb-4 mt-1">
-              <p>Scroll to see some of the projects I&#39;ve worked on.</p>
-            </div>
+            <p>Scroll to see some of the projects I&#39;ve worked on.</p>
+          </div>
         </motion.div>
-
 
         <div className="flex flex-col p-[5px] w-fit gap-2">
           <motion.div
@@ -44,17 +42,11 @@ export default function Projects() {
             <div className="font-normal text-base  text-violet-300 mb-4 mt-1">
               <p>Scroll to see some of the projects I&#39;ve worked on.</p>
             </div>
-
           </motion.div>
-
 
           <StickyScroll content={projects} />
         </div>
-
-
       </div>
-
     </>
   );
 }
-

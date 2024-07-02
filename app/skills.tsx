@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { skills } from "./properties";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import Image from "next/image";
 import React from "react";
+
 
 export default function Skills() {
   const keycaps = ["Ctrl", "⌘", "Alt"];
@@ -14,7 +16,7 @@ export default function Skills() {
         id="skills"
       >
         <motion.div
-          className=" text-4xl font-bold lg:hidden pt-16"
+          className=" text-4xl font-bold lg:hidden pt-16 text-center"
           initial={{ opacity: 0.0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -25,6 +27,9 @@ export default function Skills() {
           }}
         >
           Skills
+          <div className="font-normal text-base  text-violet-300 mt-1">
+            <p>My current teck stack.</p>
+          </div>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row-reverse gap-16 items-center z-10">
@@ -41,6 +46,9 @@ export default function Skills() {
               }}
             >
               Skills
+              <div className="font-normal text-base  text-violet-300 mt-1">
+            <p>My current teck stack.</p>
+          </div>
             </motion.div>
 
             <div className="lg:hidden w-96 flex flex-col gap-4 text-lg font-normal ">

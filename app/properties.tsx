@@ -4,8 +4,10 @@ import {
   EnvelopeClosedIcon,
   LinkedInLogoIcon,
   GitHubLogoIcon,
+  Link2Icon
 } from "@radix-ui/react-icons";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
+import Link from "next/link";
 
 type SocialMedia = {
   url: string;
@@ -130,7 +132,7 @@ export const skills: Record<string, Skill[]> = {
 
 export const projects = [
   {
-    title: "Meteo Guesser",
+    title: (<Link href={"https://github.com/strato67/Meteo-Guesser"} target="_blank" className="flex items-baseline gap-2">Meteo Guesser <Link2Icon className="scale-105"/></Link>),
     description: (
       <div className="flex flex-col gap-4">
         <p>
@@ -160,13 +162,13 @@ export const projects = [
           width={1024}
           height={1024}
           className="h-full w-full object-cover"
-          alt="Meteo Guesser"
+          alt="Meteo Guesser gameplay screenshot"
         />
       </div>
     ),
   },
   {
-    title: "Attend OT",
+    title: (<Link href={"https://github.com/strato67/Student-Attendance-Capstone"} target="_blank" className="flex items-baseline gap-2">Attend OT <Link2Icon className="scale-105"/></Link>),
     description: (
       <div className="flex flex-col gap-4">
         <p>
@@ -195,13 +197,13 @@ export const projects = [
         width={1024}
         height={1024}
         className="h-full w-full object-cover"
-        alt="Attend OT"
+        alt="Attend OT classroom view"
       />
     </div>
     ),
   },
   {
-    title: "GPUs R Us",
+    title: (<Link href={"https://github.com/strato67/GPUs-R-Us"} target="_blank" className="flex items-baseline gap-2">GPUs R Us <Link2Icon className="scale-105"/></Link>),
     description: (
       <div className="flex flex-col gap-4">
         <p>
@@ -222,13 +224,19 @@ export const projects = [
       </div>
     ),
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
-      </div>
+      <div className="h-full w-full  flex items-center justify-center text-white">
+      <Image
+        src="/projects-assets/gpusrus.png"
+        width={1024}
+        height={1024}
+        className="h-full w-full object-cover"
+        alt="GPUs R Us product page"
+      />
+    </div>
     ),
   },
   {
-    title: "Toronto Coffee Shop Insights",
+    title: (<Link href={"https://github.com/strato67/toronto-coffeeshop-insights"} target="_blank" className="flex items-baseline gap-2">Toronto Coffee Shop Insights <Link2Icon className="scale-105"/></Link>),
     description: (
       <div className="flex flex-col gap-4">
         <p>
@@ -246,7 +254,13 @@ export const projects = [
     ),
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+              <Image
+        src="/projects-assets/coffee.svg"
+        width={512}
+        height={512}
+        className="h-full w-full object-cover"
+        alt="Toronto Coffee Shop Insights"
+      />
       </div>
     ),
   },
