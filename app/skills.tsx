@@ -55,8 +55,8 @@ export default function Skills() {
               {Object.keys(skills).map((skill, index) => {
                 const skillList = skills[skill];
                 return (
-                  <div key={`skill-${index}`}>
-                    <h3 className="text-xl my-4 py-4">{skill}</h3>
+                  <div key={`skill-${index}`} className="px-2">
+                    <h3 className="text-xl my-4 py-4 font-medium">{skill}</h3>
                     <div className="grid grid-flow-row place-items-center grid-cols-3 gap-6">
                       {skillList.map((item, itemIndex) => (
                         <React.Fragment key={`item-${itemIndex}`}>
@@ -104,7 +104,7 @@ export default function Skills() {
                 const skillList = skills[skill];
                 return (
                   <div key={`skill-${index}`}>
-                    <h3 className="text-xl my-4 py-4">{skill}</h3>
+                    <h3 className="text-xl my-4 py-4 font-medium">{skill}</h3>
                     <div className="grid grid-flow-row place-items-center grid-cols-3 gap-6">
                       {skillList.map((item, itemIndex) => (
                         <React.Fragment key={`item-${itemIndex}`}>
