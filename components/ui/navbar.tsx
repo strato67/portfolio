@@ -3,11 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
 
-export default function Navbar({ className }: { className?: string }) {
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="flex flex-wrap items-center justify-between px-2 py-3 lg:py-0 bg-neutral-900 mb-3 z-30 fixed w-full ">
+      <nav className="flex flex-wrap items-center justify-between px-2 py-3 lg:py-0 bg-neutral-900 mb-3 z-30 fixed min-w-full shadow-md">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link

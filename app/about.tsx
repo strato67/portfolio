@@ -10,7 +10,7 @@ export default function About() {
         id="about"
       >
         <motion.div
-          className=" text-4xl font-bold text-center md:hidden"
+          className=" text-4xl font-bold text-center md:hidden pt-24"
           initial={{ opacity: 0.0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -56,7 +56,7 @@ export default function About() {
 
 
             <motion.div
-              className="w-96 flex flex-col gap-4 text-lg font-normal px-4 md:px-0"
+              className="w-96 flex flex-col gap-4 text-lg font-normal px-6 md:px-0"
               initial={{ opacity: 0.0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

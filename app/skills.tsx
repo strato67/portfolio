@@ -16,7 +16,7 @@ export default function Skills() {
         id="skills"
       >
         <motion.div
-          className=" text-4xl font-bold lg:hidden pt-16 text-center"
+          className=" text-4xl font-bold lg:hidden pt-24 text-center"
           initial={{ opacity: 0.0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -28,7 +28,7 @@ export default function Skills() {
         >
           Skills
           <div className="font-normal text-base  text-violet-300 mt-1">
-            <p>My current teck stack.</p>
+            <p>My current tech stack.</p>
           </div>
         </motion.div>
 
@@ -47,11 +47,11 @@ export default function Skills() {
             >
               Skills
               <div className="font-normal text-base  text-violet-300 mt-1">
-            <p>My current teck stack.</p>
+            <p>My current tech stack.</p>
           </div>
             </motion.div>
 
-            <div className="lg:hidden w-96 flex flex-col gap-4 text-lg font-normal ">
+            <div className="lg:hidden w-96 flex flex-col gap-4 text-lg font-normal px-4">
               {Object.keys(skills).map((skill, index) => {
                 const skillList = skills[skill];
                 return (

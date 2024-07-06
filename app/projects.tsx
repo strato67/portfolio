@@ -6,11 +6,11 @@ export default function Projects() {
   return (
     <>
       <div
-        className="min-h-screen w-full flex flex-col items-center justify-center gap-4 "
+        className="min-h-screen w-full flex flex-col items-center justify-center gap-4 py-8  "
         id="projects"
       >
         <motion.div
-          className=" text-4xl font-bold text-center lg:hidden"
+          className=" text-4xl font-bold text-center lg:hidden px-6 "
           initial={{ opacity: 0.0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
