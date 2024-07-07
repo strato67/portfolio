@@ -14,7 +14,7 @@ export default function Contact() {
         >
           Contact
           <div className="font-normal text-base  text-violet-300 mt-1">
-            <p>Have any questions or inquiries? Let's connect!</p>
+            <p>Have any questions or inquiries? Let&#39;s connect!</p>
           </div>
         </div>
 
