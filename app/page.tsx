@@ -5,6 +5,7 @@ import About from "./about";
 import Skills from "./skills";
 import Projects from "./projects";
 import Navbar from "@/components/ui/navbar";
+import Contact from "./contact";
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <About />
       <Skills />
       <Projects />
+      <Contact/>
     </>
   );
 }
