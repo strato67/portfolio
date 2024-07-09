@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <>
       <div
-        className="min-h-screen w-full flex flex-col items-center justify-center gap-4 py-8  "
+        className="min-h-screen w-full flex flex-col items-center justify-center gap-4 py-12  "
         id="projects"
       >
         <motion.div
