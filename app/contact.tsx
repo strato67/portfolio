@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <>
             <div
-                className="min-h-fit w-full flex flex-col items-center justify-center gap-8 border-transparent  px-2 bg-violet-900 pb-4 pt-16"
+                className="min-h-fit w-full flex flex-col items-center justify-center gap-8 border-transparent  px-2 bg-violet-900 pb-6 pt-12"
                 id="contact"
             >
         <div
