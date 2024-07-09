@@ -4,10 +4,12 @@ import {
   EnvelopeClosedIcon,
   LinkedInLogoIcon,
   GitHubLogoIcon,
-  Link2Icon
+  Link2Icon,
 } from "@radix-ui/react-icons";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import Link from "next/link";
+import Zoom from "react-medium-image-zoom";
+import "./react-medium-image-zoom.css"
 
 type SocialMedia = {
   url: string;
@@ -132,7 +134,15 @@ export const skills: Record<string, Skill[]> = {
 
 export const projects = [
   {
-    title: (<Link href={"https://github.com/strato67/Meteo-Guesser"} target="_blank" className="flex items-baseline gap-2">Meteo Guesser <Link2Icon className="scale-105"/></Link>),
+    title: (
+      <Link
+        href={"https://github.com/strato67/Meteo-Guesser"}
+        target="_blank"
+        className="flex items-baseline gap-2"
+      >
+        Meteo Guesser <Link2Icon className="scale-105" />
+      </Link>
+    ),
     description: (
       <div className="flex flex-col gap-4">
         <p>
@@ -156,27 +166,36 @@ export const projects = [
       </div>
     ),
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
-          src="/projects-assets/meteoguesser.png"
-          width={1024}
-          height={1024}
-          className="h-full w-full object-cover"
-          alt="Meteo Guesser gameplay screenshot"
-        />
+      <div className="h-full w-full  flex items-center justify-center text-white scale-150">
+        <Zoom>
+          <Image
+            src="/projects-assets/meteoguesser.png"
+            width={1024}
+            height={1024}
+            className="h-full w-full object-cover"
+            alt="Meteo Guesser gameplay screenshot"
+          />
+        </Zoom>
       </div>
     ),
   },
   {
-    title: (<Link href={"https://github.com/strato67/Student-Attendance-Capstone"} target="_blank" className="flex items-baseline gap-2">Attend OT <Link2Icon className="scale-105"/></Link>),
+    title: (
+      <Link
+        href={"https://github.com/strato67/Student-Attendance-Capstone"}
+        target="_blank"
+        className="flex items-baseline gap-2"
+      >
+        Attend OT <Link2Icon className="scale-105" />
+      </Link>
+    ),
     description: (
       <div className="flex flex-col gap-4">
         <p>
-          Student attendance tracking system consisting of a mobile
-          application for students and a web application for professors.
-          Students log in and scan a QR code at their seat in the classroom.
-          Professors log attendance and seating of students through the
-          web app.
+          Student attendance tracking system consisting of a mobile application
+          for students and a web application for professors. Students log in and
+          scan a QR code at their seat in the classroom. Professors log
+          attendance and seating of students through the web app.
         </p>
         <div className="flex flex-wrap gap-2">
           <TopicPill topic="TypeScript" />
@@ -191,19 +210,29 @@ export const projects = [
       </div>
     ),
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-      <Image
-        src="/projects-assets/attendot.png"
-        width={1024}
-        height={1024}
-        className="h-full w-full object-cover"
-        alt="Attend OT classroom view"
-      />
-    </div>
+      <div className="h-full w-full  flex items-center justify-center text-white scale-150">
+        <Zoom>
+          <Image
+            src="/projects-assets/attendot.png"
+            width={1024}
+            height={1024}
+            className="h-full w-full object-cover"
+            alt="Attend OT classroom view"
+          />
+        </Zoom>
+      </div>
     ),
   },
   {
-    title: (<Link href={"https://github.com/strato67/GPUs-R-Us"} target="_blank" className="flex items-baseline gap-2">GPUs R Us <Link2Icon className="scale-105"/></Link>),
+    title: (
+      <Link
+        href={"https://github.com/strato67/GPUs-R-Us"}
+        target="_blank"
+        className="flex items-baseline gap-2"
+      >
+        GPUs R Us <Link2Icon className="scale-105" />
+      </Link>
+    ),
     description: (
       <div className="flex flex-col gap-4">
         <p>
@@ -219,48 +248,56 @@ export const projects = [
           <TopicPill topic="Mongoose" />
           <TopicPill topic="Stripe.js" />
           <TopicPill topic="TailwindCSS" />
-
         </div>
       </div>
     ),
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-      <Image
-        src="/projects-assets/gpusrus.png"
-        width={1024}
-        height={1024}
-        className="h-full w-full object-cover"
-        alt="GPUs R Us product page"
-      />
-    </div>
+      <div className="h-full w-full  flex items-center justify-center text-white scale-125">
+        <Zoom>
+          <Image
+            src="/projects-assets/gpusrus.png"
+            width={1024}
+            height={1024}
+            className="h-full w-full object-cover"
+            alt="GPUs R Us product page"
+          />
+        </Zoom>
+      </div>
     ),
   },
   {
-    title: (<Link href={"https://github.com/strato67/toronto-coffeeshop-insights"} target="_blank" className="flex items-baseline gap-2">Toronto Coffee Shop Insights <Link2Icon className="scale-105"/></Link>),
+    title: (
+      <Link
+        href={"https://github.com/strato67/toronto-coffeeshop-insights"}
+        target="_blank"
+        className="flex items-baseline gap-2"
+      >
+        Toronto Coffee Shop Insights <Link2Icon className="scale-105" />
+      </Link>
+    ),
     description: (
       <div className="flex flex-col gap-4">
         <p>
-          An analysis of demographics and crime rate datasets using K-means clustering to identify ideal locations for new coffee shops.
+          An analysis of demographics and crime rate datasets using K-means
+          clustering to identify ideal locations for new coffee shops.
         </p>
         <div className="flex flex-wrap gap-2">
           <TopicPill topic="Python" />
           <TopicPill topic="Jupyter Notebook" />
           <TopicPill topic="Scikit-learn" />
           <TopicPill topic="Matplotlib" />
-
-
         </div>
       </div>
     ),
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-              <Image
-        src="/projects-assets/coffee.svg"
-        width={512}
-        height={512}
-        className="h-full w-full object-cover"
-        alt="Toronto Coffee Shop Insights"
-      />
+        <Image
+          src="/projects-assets/coffee.svg"
+          width={512}
+          height={512}
+          className="h-full w-full object-cover"
+          alt="Toronto Coffee Shop Insights"
+        />
       </div>
     ),
   },
